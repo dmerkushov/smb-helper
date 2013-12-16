@@ -18,7 +18,7 @@ import ru.dmerkushov.loghelper.LoggerWrapper;
 
 /**
  *
- * @author shandr
+ * @author Dmitriy Merkushov
  */
 public class SMBHelper {
 
@@ -28,11 +28,10 @@ public class SMBHelper {
 	/**
 	 * Copies a file from SFTP to local filesystem byte by byte
 	 *
-	 * @param sftpClient
-	 * @param remoteFilename
+	 * @param remoteSmbFileUrl
 	 * @param localFilename
 	 * @return
-	 * @throws SSHHelperException
+	 * @throws ru.dmerkushov.smbhelper.SMBHelperException
 	 */
 	public static File copyFileFromSMBToLocal (String remoteSmbFileUrl, String localFilename) throws SMBHelperException {
 		if (!loggerWrapperInitialized) {
@@ -75,10 +74,9 @@ public class SMBHelper {
 	 * Reads the contents of a binary file from SFTP. Can read no more than
 	 * Integer.MAX_VALUE (currently 2^31-1) bytes
 	 *
-	 * @param sftpClient
-	 * @param filename
+	 * @param remoteSmbFileUrl
 	 * @return
-	 * @throws SSHHelperException
+	 * @throws ru.dmerkushov.smbhelper.SMBHelperException
 	 */
 	public static byte[] readBinaryFileFromSMB (String remoteSmbFileUrl) throws SMBHelperException {
 		if (!loggerWrapperInitialized) {
@@ -138,10 +136,9 @@ public class SMBHelper {
 	/**
 	 * Reads the contents of a text file in UTF-8 charset from SFTP
 	 *
-	 * @param sftpClient
 	 * @param remoteSmbFileUrl
 	 * @return
-	 * @throws SSHHelperException
+	 * @throws ru.dmerkushov.smbhelper.SMBHelperException
 	 */
 	public static String readTextFileFromSMB (String remoteSmbFileUrl) throws SMBHelperException {
 		if (!loggerWrapperInitialized) {
@@ -159,11 +156,10 @@ public class SMBHelper {
 	/**
 	 * Reads the contents of a text file in the specified charset from SMB
 	 *
-	 * @param sftpClient
 	 * @param remoteSmbFileUrl
 	 * @param charset
 	 * @return
-	 * @throws SSHHelperException
+	 * @throws ru.dmerkushov.smbhelper.SMBHelperException
 	 */
 	public static String readTextFileFromSMB (String remoteSmbFileUrl, String charset) throws SMBHelperException {
 		if (!loggerWrapperInitialized) {

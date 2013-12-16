@@ -7,7 +7,7 @@ package ru.dmerkushov.smbhelper;
 
 /**
  *
- * @author shandr
+ * @author Dmitriy Merkushov
  */
 public class SMBHelperException extends Exception {
 	private static final long serialVersionUID = 1L;
