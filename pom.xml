@@ -3,7 +3,7 @@
 
 	<groupId>ru.dmerkushov</groupId>
 	<artifactId>smb-helper</artifactId>
-	<version>1.5.1-SNAPSHOT</version>
+	<version>1.5.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>smb-helper</name>
