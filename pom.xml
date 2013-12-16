@@ -3,7 +3,7 @@
 
 	<groupId>ru.dmerkushov</groupId>
 	<artifactId>smb-helper</artifactId>
-	<version>1.5.1-SNAPSHOT</version>
+	<version>1.5.1</version>
 	<packaging>jar</packaging>
 
 	<name>smb-helper</name>
@@ -32,7 +32,7 @@
 		<connection>scm:git:git@github.com:dmerkushov/smb-helper.git</connection>
 		<developerConnection>scm:git:git@github.com:dmerkushov/smb-helper.git</developerConnection>
 		<url>git@github.com:dmerkushov/smb-helper.git</url>
-		<tag>HEAD</tag>
+		<tag>smb-helper-1.5.1</tag>
 	</scm>
   
 	<developers>
